@@ -4,5 +4,5 @@ const authrouter = express.Router();
 
 authrouter.post('/signup', authc.signup);
 authrouter.post('/signin', authc.signin);
-
+authrouter.post('/google', authc.google);
 module.exports = authrouter;
