@@ -11,6 +11,7 @@ module.exports.signup = async(req,res,next)=>{
     try {
         await newuser.save();
         res.status(201).json("user created");
+        
     } catch (error) {
         next(error);
     }
